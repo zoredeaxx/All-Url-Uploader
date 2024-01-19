@@ -24,7 +24,7 @@ import os
 import logging
 from pyrogram.raw.all import layer
 from pyrogram import Client, idle, __version__
-
+from wserver import keep_alive
 from config import Config
 
 logging.basicConfig(level=logging.DEBUG,
@@ -65,3 +65,4 @@ logger.info("Developed by github.com/kalanakt Sponsored by www.netronk.com")
 idle()
 bot.stop()
 logger.info("Bot Stopped ;)")
+keep_alive()
